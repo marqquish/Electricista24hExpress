@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Electricistas Madrid 24h Express — Servicio Urgente</title>
+<meta name="description" content="Electricista 24 horas Madrid. Servicio urgente inmediato en toda la Comunidad de Madrid. Reparaciones, averías, instalaciones y boletines eléctricos.">
+<link rel="canonical" href="https://electricistasmadrid24hexpress.es/">
+<meta property="og:title" content="Electricistas Madrid 24h Express — Servicio Urgente">
+<meta property="og:description" content="Electricista 24 horas Madrid. Respuesta en menos de 30 minutos. Técnicos autorizados.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://electricistasmadrid24hexpress.es/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Electricistas Madrid 24h Express">
+<meta name="twitter:description" content="Servicio urgente de electricista en Madrid. 24 horas, 365 días.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Electricistas Madrid 24h Express",
+  "description": "Servicio urgente de electricista 24 horas en Madrid",
+  "url": "https://electricistasmadrid24hexpress.es/",
+  "telephone": "+34611843873",
+  "email": "marcosjarenoes@gmail.com",
+  "areaServed": {
+    "@type": "City",
+    "name": "Madrid"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "500",
+    "bestRating": "5"
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --surface: #ffffff;
+    --fg: #191c1d;
+    --muted: #424752;
+    --border: #c2c6d4;
+    --accent: #003f87;
+    --accent-light: #0056b3;
+    --gold: #feb700;
+    --on-accent: #ffffff;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+
+  .animate-in {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1);
+  }
+  .animate-in.done {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(0,63,135,0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(0,63,135,0); }
+    100% { box-shadow: 0 0 0 0 rgba(0,63,135,0); }
+  }
+  .pulse-cta { animation: pulse-ring 2s infinite; }
+
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  .animate-float { animation: float 3s ease-in-out infinite; }
+
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #f8f9fa; }
+  ::-webkit-scrollbar-thumb { background: #c2c6d4; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #727784; }
+
+  .review-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.875rem; color: white; flex-shrink: 0;
+  }
+  .google-review-card {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .btn-press:active { transform: scale(0.96); }
+  .maps-embed { filter: grayscale(0.2) contrast(1.05); transition: filter 0.4s; }
+  .maps-embed:hover { filter: grayscale(0) contrast(1); }
+</style>
+</head>
+<body class="bg-[var(--bg)] text-[var(--fg)] antialiased overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 h-16 bg-[var(--surface)]/95 backdrop-blur-sm border-b border-[var(--border)] hidden md:flex items-center justify-between px-6 lg:px-10">
+  <a href="#" class="text-xl font-extrabold text-[var(--accent)] tracking-tight">Electricistas Madrid <span class="text-[var(--gold)]">24h</span></a>
+  <div class="flex items-center gap-6">
+    <a href="#servicios" class="text-sm font-semibold text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Servicios</a>
+    <a href="#nosotros" class="text-sm font-semibold text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Nosotros</a>
+    <a href="#testimonios" class="text-sm font-semibold text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Opiniones</a>
+    <a href="#contacto" class="text-sm font-semibold text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Contacto</a>
+  </div>
+  <a href="tel:611843873" class="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[var(--accent-light)] transition-colors shadow-md pulse-cta">
+    <span class="material-symbols-outlined text-lg">call</span> 620 60 23 80
+  </a>
+</nav>
+
+<header class="md:hidden fixed top-0 w-full z-50 h-16 bg-[var(--surface)] border-b border-[var(--border)] flex items-center justify-between px-4">
+  <a href="#" class="text-lg font-extrabold text-[var(--accent)] tracking-tight">Electricistas <span class="text-[var(--gold)]">24h</span></a>
+  <span class="text-sm font-bold text-[var(--gold)] flex items-center gap-1">
+    <span class="material-symbols-outlined text-base">schedule</span> 24h
+  </span>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="relative pt-20 pb-16 md:pt-36 md:pb-28 bg-gradient-to-br from-[var(--bg)] via-white to-[var(--bg)] overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle at 25% 50%, var(--accent) 0%, transparent 50%), radial-gradient(circle at 75% 50%, var(--gold) 0%, transparent 50%);"></div>
+    <div class="max-w-6xl mx-auto px-4 md:px-10 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-[var(--gold)]/15 text-[#6b4b00] px-4 py-2 rounded-full border border-[var(--gold)]/30 text-sm font-bold mb-6 animate-in">
+          <span class="material-symbols-outlined text-[var(--gold)] text-lg fill">bolt</span>
+          24 horas · Urgencias · Respuesta inmediata
+        </div>
+        <h1 class="text-[clamp(2rem,5vw,3rem)] font-extrabold leading-[1.1] tracking-[-0.02em] text-[var(--fg)] mb-5 animate-in">
+          Electricistas 24h en Madrid – <span class="text-[var(--accent)]">Servicio urgente inmediato</span>
+        </h1>
+        <p class="text-[clamp(1rem,2vw,1.125rem)] leading-relaxed text-[var(--muted)] max-w-lg mb-8 animate-in">
+          Solucionamos cortes de luz, averías y realizamos instalaciones con técnicos autorizados en toda la Comunidad de Madrid. <strong class="text-[var(--fg)]">Llegamos en menos de 30 minutos.</strong>
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mb-6 animate-in">
+          <a href="tel:611843873" class="inline-flex items-center justify-center gap-2 bg-[var(--accent)] text-white h-14 px-8 rounded-full text-lg font-bold shadow-[0_4px_14px_rgba(0,63,135,0.39)] hover:shadow-[0_6px_20px_rgba(0,63,135,0.25)] hover:bg-[var(--accent-light)] transition-all pulse-cta">
+            <span class="material-symbols-outlined fill animate-float">phone_in_talk</span>
+            LLAMAR AHORA
+          </a>
+          <a href="#contacto" class="inline-flex items-center justify-center gap-2 bg-white border-2 border-[var(--accent)] text-[var(--accent)] h-14 px-8 rounded-full text-lg font-bold hover:bg-[var(--bg)] transition-all">
+            <span class="material-symbols-outlined">request_quote</span>
+            Solicitar presupuesto
+          </a>
+        </div>
+        <div class="flex items-center gap-6 pt-4 border-t border-[var(--border)] animate-in">
+          <div class="flex items-center gap-2 text-sm text-[var(--muted)]">
+            <span class="material-symbols-outlined text-[var(--gold)]">verified</span> Técnicos Certificados
+          </div>
+          <div class="flex items-center gap-2 text-sm text-[var(--muted)]">
+            <span class="material-symbols-outlined text-[var(--gold)]">shield</span> 100% Garantizado
+          </div>
+        </div>
+      </div>
+      <div class="relative h-[400px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl border border-[var(--border)] animate-in">
+        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" alt="Electricista trabajando en cuadro eléctrico" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-[var(--border)] shadow-lg flex items-center justify-between">
+          <div>
+            <p class="text-sm font-bold text-[var(--fg)]">Técnico en zona</p>
+            <p class="text-xs text-[var(--accent)] font-semibold">Disponible ahora</p>
+          </div>
+          <div class="h-3 w-3 bg-green-500 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 md:py-24 bg-[var(--surface)]">
+    <div class="max-w-6xl mx-auto px-4 md:px-10">
+      <div class="text-center mb-12 animate-in">
+        <h2 class="text-[clamp(1.75rem,3.5vw,2.25rem)] font-bold text-[var(--fg)] mb-4">Nuestros Servicios Eléctricos</h2>
+        <p class="text-[var(--muted)] max-w-2xl mx-auto">Soluciones rápidas y seguras para cualquier problema eléctrico en tu hogar o negocio.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 group animate-in">
+          <div class="w-12 h-12 bg-[var(--accent)]/10 rounded-full flex items-center justify-center mb-4 text-[var(--accent)] group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">warning</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Reparaciones Urgentes</h3>
+          <p class="text-sm text-[var(--muted)]">Atención inmediata para averías críticas. Llegamos en menos de 30 min a cualquier punto de Madrid.</p>
+        </div>
+        <div class="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 group animate-in">
+          <div class="w-12 h-12 bg-[var(--accent)]/10 rounded-full flex items-center justify-center mb-4 text-[var(--accent)] group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">electrical_services</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Averías Cuadros Eléctricos</h3>
+          <p class="text-sm text-[var(--muted)]">Diagnóstico y reparación de cuadros de luces, diferenciales saltados y fusibles.</p>
+        </div>
+        <div class="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 group animate-in">
+          <div class="w-12 h-12 bg-[var(--accent)]/10 rounded-full flex items-center justify-center mb-4 text-[var(--accent)] group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">power_off</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Cortes de Luz</h3>
+          <p class="text-sm text-[var(--muted)]">Restablecemos el suministro eléctrico de forma rápida y segura tras un apagón o sobrecarga.</p>
+        </div>
+        <div class="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 group animate-in">
+          <div class="w-12 h-12 bg-[var(--accent)]/10 rounded-full flex items-center justify-center mb-4 text-[var(--accent)] group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">home_repair_service</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Instalaciones</h3>
+          <p class="text-sm text-[var(--muted)]">Instalación de enchufes, iluminación LED, recableado completo y domótica.</p>
+        </div>
+        <div class="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 group animate-in">
+          <div class="w-12 h-12 bg-[var(--accent)]/10 rounded-full flex items-center justify-center mb-4 text-[var(--accent)] group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">description</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Boletines Eléctricos</h3>
+          <p class="text-sm text-[var(--muted)]">Emisión de Certificados de Instalación Eléctrica (CIE) oficiales y altas de suministro.</p>
+        </div>
+        <div class="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-0.5 group animate-in">
+          <div class="w-12 h-12 bg-[var(--accent)]/10 rounded-full flex items-center justify-center mb-4 text-[var(--accent)] group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined">build</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Mantenimiento</h3>
+          <p class="text-sm text-[var(--muted)]">Mantenimiento preventivo para comunidades de vecinos, locales y oficinas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué elegirnos -->
+  <section class="py-16 md:py-20 bg-gradient-to-b from-[var(--bg)] to-white border-y border-[var(--border)]">
+    <div class="max-w-6xl mx-auto px-4 md:px-10">
+      <div class="text-center mb-12 animate-in">
+        <h2 class="text-[clamp(1.75rem,3.5vw,2.25rem)] font-bold text-[var(--fg)] mb-4">¿Por qué elegirnos?</h2>
+        <p class="text-[var(--muted)] max-w-2xl mx-auto">Más de 10 años de experiencia nos avalan como electricistas de confianza en Madrid.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="flex flex-col items-center gap-3 animate-in">
+          <div class="w-16 h-16 rounded-full bg-white border border-[var(--border)] flex items-center justify-center text-[var(--accent)] shadow-sm">
+            <span class="material-symbols-outlined text-3xl">timer</span>
+          </div>
+          <h3 class="text-lg font-bold">Respuesta rápida</h3>
+          <p class="text-sm text-[var(--muted)] max-w-xs">En tu puerta en menos de <strong class="text-[var(--accent)]">30 minutos</strong> desde tu llamada.</p>
+        </div>
+        <div class="flex flex-col items-center gap-3 animate-in">
+          <div class="w-16 h-16 rounded-full bg-white border border-[var(--border)] flex items-center justify-center text-[var(--accent)] shadow-sm">
+            <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+          </div>
+          <h3 class="text-lg font-bold">Técnicos certificados</h3>
+          <p class="text-sm text-[var(--muted)] max-w-xs">Profesionales autorizados con experiencia y garantía.</p>
+        </div>
+        <div class="flex flex-col items-center gap-3 animate-in">
+          <div class="w-16 h-16 rounded-full bg-white border border-[var(--border)] flex items-center justify-center text-[var(--accent)] shadow-sm">
+            <span class="material-symbols-outlined text-3xl">euro_symbol</span>
+          </div>
+          <h3 class="text-lg font-bold">Presupuesto sin compromiso</h3>
+          <p class="text-sm text-[var(--muted)] max-w-xs">Precios claros y transparentes antes de empezar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="nosotros" class="py-16 md:py-24 bg-[var(--surface)]">
+    <div class="max-w-6xl mx-auto px-4 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="relative h-[350px] lg:h-[450px] rounded-2xl overflow-hidden border border-[var(--border)] animate-in shadow-lg">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Equipo de electricistas Madrid" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-t from-[var(--accent)]/30 to-transparent"></div>
+      </div>
+      <div class="animate-in">
+        <span class="text-sm font-bold text-[var(--accent)] uppercase tracking-wider">Sobre nosotros</span>
+        <h2 class="text-[clamp(1.75rem,3.5vw,2.25rem)] font-bold text-[var(--fg)] mt-3 mb-5">Electricistas de confianza en Madrid desde 2012</h2>
+        <p class="text-[var(--muted)] mb-4">Somos un equipo de técnicos electricistas autorizados con más de una década de experiencia en el sector. Nuestra prioridad es ofrecer un servicio rápido, seguro y transparente en toda la Comunidad de Madrid.</p>
+        <p class="text-[var(--muted)] mb-6">Atendemos urgencias las 24 horas del día, los 365 días del año. Desde una avería doméstica hasta instalaciones complejas para comunidades y comercios.</p>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div class="bg-[var(--bg)] rounded-xl p-4 border border-[var(--border)]">
+            <p class="text-2xl font-extrabold text-[var(--accent)]">+500</p>
+            <p class="text-xs text-[var(--muted)]">Intervenciones al mes</p>
+          </div>
+          <div class="bg-[var(--bg)] rounded-xl p-4 border border-[var(--border)]">
+            <p class="text-2xl font-extrabold text-[var(--accent)]">12+</p>
+            <p class="text-xs text-[var(--muted)]">Años de experiencia</p>
+          </div>
+          <div class="bg-[var(--bg)] rounded-xl p-4 border border-[var(--border)]">
+            <p class="text-2xl font-extrabold text-[var(--accent)]">4.8</p>
+            <p class="text-xs text-[var(--muted)]">Valoración media</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios — estilo Google Maps -->
+  <section id="testimonios" class="py-16 md:py-24 bg-gradient-to-b from-white to-[var(--bg)] border-t border-[var(--border)]">
+    <div class="max-w-6xl mx-auto px-4 md:px-10">
+      <div class="text-center mb-12 animate-in">
+        <div class="flex items-center justify-center gap-2 mb-3">
+          <svg viewBox="0 0 48 48" width="28" height="28"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.54 28.59A14.5 14.5 0 0 1 9.5 24c0-1.59.38-3.1 1.04-4.48l-7.98-6.19A23.99 23.99 0 0 0 0 24c0 3.77.88 7.35 2.56 10.56l7.98-5.97z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.97C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+          <span class="font-bold text-sm text-[var(--muted)] tracking-wide">RESEÑAS DE GOOGLE</span>
+        </div>
+        <div class="flex justify-center gap-1 mb-2">
+          <span class="material-symbols-outlined fill text-[var(--gold)] text-3xl">star</span>
+          <span class="material-symbols-outlined fill text-[var(--gold)] text-3xl">star</span>
+          <span class="material-symbols-outlined fill text-[var(--gold)] text-3xl">star</span>
+          <span class="material-symbols-outlined fill text-[var(--gold)] text-3xl">star</span>
+          <span class="material-symbols-outlined fill text-[var(--gold)] text-3xl">star_half</span>
+        </div>
+        <h2 class="text-[clamp(1.75rem,3.5vw,2.25rem)] font-bold text-[var(--fg)] mb-1">4.8 <span class="text-[var(--muted)] font-normal text-lg">/ 5</span></h2>
+        <p class="text-[var(--muted)] max-w-xl mx-auto text-sm">Basado en <strong class="text-[var(--fg)]">500+ valoraciones</strong> de clientes reales en Google Maps</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-white border border-[var(--border)] rounded-xl p-5 google-review-card animate-in">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="review-avatar" style="background:#4285F4">LG</div>
+            <div class="min-w-0">
+              <div class="flex items-center gap-1.5">
+                <p class="text-sm font-bold">Laura García</p>
+                <svg viewBox="0 0 16 16" width="12" height="12"><path fill="#34A853" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/><path fill="#fff" d="M6.6 10.9L3.5 7.8 4.7 6.6l1.9 1.9 4-4 1.2 1.2z"/></svg>
+              </div>
+              <p class="text-[11px] text-[var(--muted)]">Hace 2 semanas</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-2">
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+          </div>
+          <p class="text-sm text-[var(--muted)] leading-relaxed">"Me quedé sin luz a las 2 de la mañana. Llamé y en 25 minutos ya estaban en casa. Increíble servicio, muy profesionales."</p>
+        </div>
+        <div class="bg-white border border-[var(--border)] rounded-xl p-5 google-review-card animate-in">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="review-avatar" style="background:#0F9D58">CM</div>
+            <div class="min-w-0">
+              <div class="flex items-center gap-1.5">
+                <p class="text-sm font-bold">Carlos Martínez</p>
+                <svg viewBox="0 0 16 16" width="12" height="12"><path fill="#34A853" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/><path fill="#fff" d="M6.6 10.9L3.5 7.8 4.7 6.6l1.9 1.9 4-4 1.2 1.2z"/></svg>
+              </div>
+              <p class="text-[11px] text-[var(--muted)]">Hace 1 mes</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-2">
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+          </div>
+          <p class="text-sm text-[var(--muted)] leading-relaxed">"Presupuesto claro, trabajo impecable. Repararon el cuadro eléctrico en una hora. Muy recomendables."</p>
+        </div>
+        <div class="bg-white border border-[var(--border)] rounded-xl p-5 google-review-card animate-in">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="review-avatar" style="background:#DB4437">AR</div>
+            <div class="min-w-0">
+              <div class="flex items-center gap-1.5">
+                <p class="text-sm font-bold">Ana Rodríguez</p>
+                <svg viewBox="0 0 16 16" width="12" height="12"><path fill="#34A853" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/><path fill="#fff" d="M6.6 10.9L3.5 7.8 4.7 6.6l1.9 1.9 4-4 1.2 1.2z"/></svg>
+              </div>
+              <p class="text-[11px] text-[var(--muted)]">Hace 3 semanas</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5 mb-2">
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+            <span class="material-symbols-outlined fill text-[var(--gold)] text-sm">star</span>
+          </div>
+          <p class="text-sm text-[var(--muted)] leading-relaxed">"Necesitaba un boletín eléctrico urgente para la comunidad. Lo gestionaron todo en 48 horas. Muy recomendables."</p>
+        </div>
+      </div>
+      <div class="text-center mt-8 animate-in">
+        <a href="https://www.google.com/maps/place/Electricistas+24+horas+Madrid/@40.3824558,-3.6674536,15z/data=!4m8!3m7!1s0xd4227ba4b6986b3:0xfd53d1bea23e126c!8m2!3d40.3824558!4d-3.6674536!9m1!1b1!16s%2Fg%2F11j65rxgz4?entry=ttu" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border-2 border-[var(--accent)] text-[var(--accent)] px-6 py-3.5 rounded-full text-sm font-bold hover:bg-[var(--bg)] transition-all btn-press">
+          <svg viewBox="0 0 48 48" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.54 28.59A14.5 14.5 0 0 1 9.5 24c0-1.59.38-3.1 1.04-4.48l-7.98-6.19A23.99 23.99 0 0 0 0 24c0 3.77.88 7.35 2.56 10.56l7.98-5.97z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.97C6.51 42.62 14.62 48 24 48z"/></svg>
+          Ver todas las reseñas en Google Maps
+          <span class="material-symbols-outlined text-base">open_in_new</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zonas + Formulario -->
+  <section id="contacto" class="py-16 md:py-24 bg-[var(--surface)] border-t border-[var(--border)]">
+    <div class="max-w-6xl mx-auto px-4 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="animate-in space-y-8">
+        <div>
+          <h2 class="text-[clamp(1.75rem,3.5vw,2.25rem)] font-bold text-[var(--fg)] mb-6">Zonas de Actuación</h2>
+          <p class="text-[var(--muted)] mb-8">Prestamos servicio de electricista urgente en toda la Comunidad de Madrid. Unidades móviles desplegadas para llegar rápido.</p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Madrid Centro</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Alcalá de Henares</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Móstoles</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Getafe</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Leganés</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Alcobendas</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Fuenlabrada</div>
+            <div class="flex items-center gap-2 font-medium"><span class="material-symbols-outlined text-[var(--accent)]">location_on</span> Alcorcón</div>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-xl border border-[var(--border)] shadow-sm maps-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.75!2d-3.6674536!3d40.3824558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227ba4b6986b3%3A0xfd53d1bea23e126c!2sElectricistas%2024%20horas%20Madrid!5e0!3m2!1ses!2ses!4v1" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Electricistas 24h Madrid en Google Maps"></iframe>
+        </div>
+        <div class="p-6 bg-[var(--gold)]/10 border border-[var(--gold)]/30 rounded-xl">
+          <h3 class="text-lg font-bold mb-2">¿Es una urgencia?</h3>
+          <p class="text-sm text-[var(--muted)] mb-4">No esperes al formulario. Llámanos directamente y un técnico saldrá de inmediato.</p>
+          <a href="tel:611843873" class="inline-flex items-center gap-2 bg-[var(--accent)] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[var(--accent-light)] transition-colors shadow-md btn-press">
+            <span class="material-symbols-outlined text-lg">call</span> 620 60 23 80
+          </a>
+        </div>
+      </div>
+      <div class="bg-white p-6 md:p-8 rounded-2xl border border-[var(--border)] shadow-lg relative overflow-hidden animate-in">
+        <div class="absolute top-0 left-0 w-full h-2 bg-[#25D366]"></div>
+        <div class="flex flex-col items-center text-center gap-5 py-6">
+          <div class="w-20 h-20 rounded-full bg-[#25D366]/10 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.121 1.533 5.857L.057 23.882a.5.5 0 0 0 .611.61l6.101-1.464A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.88 9.88 0 0 1-5.031-1.371l-.361-.214-3.741.898.934-3.638-.235-.374A9.861 9.861 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-2">Escríbenos por WhatsApp</h2>
+            <p class="text-sm text-[var(--muted)] leading-relaxed max-w-xs mx-auto">Cuéntanos tu problema y te respondemos en minutos. Disponible <strong class="text-[var(--fg)]">24 horas, 7 días</strong>.</p>
+          </div>
+          <a href="https://wa.me/34611843873?text=Hola%2C%20necesito%20un%20electricista%20urgente%20en%20Madrid." target="_blank" rel="noopener"
+            class="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full text-base font-bold shadow-[0_4px_14px_rgba(37,211,102,0.4)] hover:bg-[#1ebe5d] hover:shadow-[0_6px_20px_rgba(37,211,102,0.35)] transition-all active:scale-95 pulse-cta w-full justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.121 1.533 5.857L.057 23.882a.5.5 0 0 0 .611.61l6.101-1.464A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.88 9.88 0 0 1-5.031-1.371l-.361-.214-3.741.898.934-3.638-.235-.374A9.861 9.861 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/></svg>
+            Abrir WhatsApp
+          </a>
+          <div class="w-full border-t border-[var(--border)] pt-5 flex flex-col gap-3">
+            <p class="text-xs text-[var(--muted)] font-semibold uppercase tracking-wider">O llámanos directamente</p>
+            <a href="tel:611843873" class="inline-flex items-center justify-center gap-2 bg-[var(--accent)] text-white px-6 py-3.5 rounded-full text-sm font-bold hover:bg-[var(--accent-light)] transition-colors shadow-md w-full">
+              <span class="material-symbols-outlined text-base">call</span> 620 60 23 80
+            </a>
+          </div>
+          <p class="text-[11px] text-[var(--muted)]">Tiempo medio de respuesta: <strong class="text-[var(--fg)]">&lt; 5 minutos</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="py-12 px-4 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-8 bg-[var(--fg)] text-white pb-28 md:pb-12">
+  <div>
+    <p class="text-xl font-extrabold mb-3">Electricistas Madrid <span class="text-[var(--gold)]">24h</span></p>
+    <p class="text-sm opacity-80 leading-relaxed">Servicio técnico autorizado de electricidad. Urgencias 24 horas los 365 días del año.</p>
+    <p class="text-xs opacity-60 mt-4">© 2025 Electricistas Madrid 24h Express. Técnicos Autorizados.</p>
+  </div>
+  <div>
+    <p class="text-sm font-bold mb-3 uppercase tracking-wider">Zonas Principales</p>
+    <div class="flex flex-col gap-1.5 text-sm opacity-80">
+      <a href="#contacto" class="hover:text-[var(--gold)] transition-colors">Madrid Centro</a>
+      <a href="#contacto" class="hover:text-[var(--gold)] transition-colors">Móstoles</a>
+      <a href="#contacto" class="hover:text-[var(--gold)] transition-colors">Alcalá de Henares</a>
+      <a href="#contacto" class="hover:text-[var(--gold)] transition-colors">Fuenlabrada</a>
+      <a href="#contacto" class="hover:text-[var(--gold)] transition-colors">Leganés</a>
+    </div>
+  </div>
+  <div>
+    <p class="text-sm font-bold mb-3 uppercase tracking-wider">Contacto</p>
+    <div class="flex flex-col gap-2 text-sm">
+      <a href="tel:611843873" class="flex items-center gap-2 hover:text-[var(--gold)] transition-colors">
+        <span class="material-symbols-outlined text-base">call</span> 620 60 23 80
+      </a>
+      <a href="mailto:marcosjarenoes@gmail.com" class="flex items-center gap-2 hover:text-[var(--gold)] transition-colors">
+        <span class="material-symbols-outlined text-base">mail</span> marcosjarenoes@gmail.com
+      </a>
+      <a href="https://www.google.com/maps/place/Electricistas+24+horas+Madrid" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-[var(--gold)] transition-colors">
+        <span class="material-symbols-outlined text-base">map</span> Madrid, España
+      </a>
+    </div>
+    <p class="text-sm font-bold mt-5 mb-2 uppercase tracking-wider">Legal</p>
+    <div class="flex flex-col gap-1.5 text-sm opacity-80">
+      <button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="text-left hover:text-[var(--gold)] transition-colors cursor-pointer bg-transparent border-0 p-0 text-sm opacity-80">Aviso Legal</button>
+      <button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="text-left hover:text-[var(--gold)] transition-colors cursor-pointer bg-transparent border-0 p-0 text-sm opacity-80">Política de Privacidad</button>
+    </div>
+  </div>
+</footer>
+
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 md:hidden border-t border-[var(--border)] bg-[var(--surface)] shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+  <a href="tel:611843873" class="flex flex-col items-center justify-center bg-[var(--accent)] text-white rounded-full px-8 py-3 shadow-md transition-transform active:scale-95">
+    <span class="material-symbols-outlined text-xl">call</span>
+    <span class="text-xs font-bold mt-0.5">Llamar ahora</span>
+  </a>
+  <a href="https://wa.me/34611843873?text=Hola%2C%20necesito%20un%20electricista%20urgente%20en%20Madrid." target="_blank" rel="noopener" class="flex flex-col items-center justify-center text-[#25D366] p-2 rounded-lg transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.121 1.533 5.857L.057 23.882a.5.5 0 0 0 .611.61l6.101-1.464A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.88 9.88 0 0 1-5.031-1.371l-.361-.214-3.741.898.934-3.638-.235-.374A9.861 9.861 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/></svg>
+    <span class="text-[10px] font-bold">WhatsApp</span>
+  </a>
+  <a href="#contacto" class="flex flex-col items-center justify-center text-[var(--muted)] p-2 rounded-lg transition-colors">
+    <span class="material-symbols-outlined text-xl">request_quote</span>
+    <span class="text-[10px] font-bold">Presupuesto</span>
+  </a>
+</nav>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // ─── EMAILJS CONFIG ───────────────────────────────────────────────
+  // INSTRUCCIONES: ve a https://www.emailjs.com, crea cuenta gratuita y
+  // rellena estos tres valores con los de tu cuenta:
+  const EMAILJS_PUBLIC_KEY  = "AnFmK76_Ni7gJmwf4";   // Account > API Keys
+  const EMAILJS_SERVICE_ID  = "service_urrl9dr";   // Email Services > Service ID
+  const EMAILJS_TEMPLATE_ID = "template_vtp84fc";  // Email Templates > Template ID
+  // ──────────────────────────────────────────────────────────────────
+
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+  (function() {
+    // IntersectionObserver animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('done');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+
+    // Nav offset for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Micro-interacciones botones
+    document.querySelectorAll('.btn-press').forEach(btn => {
+      btn.addEventListener('mousedown', () => btn.classList.add('scale-95'));
+      btn.addEventListener('mouseup', () => btn.classList.remove('scale-95'));
+      btn.addEventListener('mouseleave', () => btn.classList.remove('scale-95'));
+    });
+
+    // Feedback táctil en enlaces de llamada
+    document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+      el.addEventListener('click', function() {
+        this.style.transition = 'background 0.1s';
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => { this.style.transform = ''; }, 150);
+      });
+    });
+
+    // Validación formulario en tiempo real
+    const form = document.getElementById('contactForm');
+    if (form) {
+      const inputs = form.querySelectorAll('input[required], textarea');
+      inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+          if (this.value.trim() === '') {
+            this.style.borderColor = '#DC2626';
+          } else {
+            this.style.borderColor = 'var(--border)';
+          }
+        });
+        input.addEventListener('input', function() {
+          if (this.value.trim() !== '') {
+            this.style.borderColor = '#17A34A';
+          } else {
+            this.style.borderColor = 'var(--border)';
+          }
+        });
+      });
+
+      // Envío con EmailJS (sin redirección)
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        const successDiv = document.getElementById('formSuccess');
+        const errorDiv   = document.getElementById('formError');
+        const data = new FormData(form);
+
+        btn.disabled = true;
+        btn.textContent = 'Enviando…';
+
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+          nombre:   data.get('nombre')   || '',
+          telefono: data.get('telefono') || '',
+          email:    data.get('email')    || '',
+          servicio: data.get('servicio') || '',
+          mensaje:  data.get('mensaje')  || '',
+        })
+        .then(() => {
+          form.style.display = 'none';
+          successDiv.classList.remove('hidden');
+          errorDiv.classList.add('hidden');
+        })
+        .catch((err) => {
+          console.error('EmailJS error:', err);
+          errorDiv.classList.remove('hidden');
+          successDiv.classList.add('hidden');
+          btn.disabled = false;
+          btn.innerHTML = 'Solicitar Contacto <span class="material-symbols-outlined">arrow_forward</span>';
+        });
+      });
+    }
+  })();
+</script>
+</body>
+</html>
